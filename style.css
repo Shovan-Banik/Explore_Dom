@@ -4,3 +4,11 @@ p{
 .man li{
     color: blue;
 }
+.sefu{
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+.text{
+    font-size: 5em;
+}

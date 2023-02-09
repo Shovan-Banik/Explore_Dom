@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,50 +8,57 @@
     <title>Explore Dom</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>Explore DOM DOM</h1>
-  </header>
-  <section>
-    <p>hello dom</p>
-    <p>i will explore you today</p>
-    <ul>
-        <li>koddos</li>
-        <li>lodos</li>
-        <li>podos</li>
-        <li>boyati</li>
-    </ul>
-  </section>
-  <section>
-    <h3>hello dom</p>
-    <p id="pera_man">i will explore you today</p>
-    <ul class="man">
-        <li class="abol_manush">lodos</li>
-        <li class="abol_manush">podos</li>
-        <li class="abol_manush">koddos</li>
-        <li>boyati</li>
-    </ul>
-  </section>
+    <header>
+        <h1 id="title">Explore DOM DOM</h1>
+    </header>
+    <main id="main_container">
+        <section id='first_section' class="text">
+            <p>hello dom</p>
+            <p>i will explore you today</p>
+            <ul id="funny">
+                <li>toga</li>
+                <li>moga</li>
+                <li>joga</li>
+                <li>boga</li>
+            </ul>
+        </section>
+        <section id="second_section">
+            <h3>hello dom</p>
+                <p id="pera_man">i will explore you today</p>
+                <ul class="man">
+                    <li class="abol_manush">lodos khamo na</li>
+                    <li class="abol_manush">podos</li>
+                    <li class="abol_manush">koddos</li>
+                    <li>boyati</li>
+                </ul>
+        </section>
+    </main>
+
     
+    <script src="js/append.js"></script>
+    <script src="js/styleDom.js"></script>
     <script src="js/dom.js"></script>
     <script>
-        const liElements= document.getElementsByTagName('li');
-        for(const li of liElements){
-            console.log(li);
+        const liElements = document.getElementsByTagName('li');
+        for (const li of liElements) {
+            // console.log(li);
         }
-        const pElements=document.getElementsByTagName('p');
-        for(const p of pElements){
-            console.log(p.innerText);
+        const pElements = document.getElementsByTagName('p');
+        for (const p of pElements) {
+            // console.log(p.innerText);
         }
-        const manush=document.getElementsByClassName('abol_manush');
-        for(const abol of manush){
-            console.log(abol.innerText);
+        const manush = document.getElementsByClassName('abol_manush');
+        for (const abol of manush) {
+            // console.log(abol.innerText);
         }
         // query selector
-        const lili=document.querySelectorAll('li');
-        for(const li of lili){
-            console.log(li.innerText)
+        const lili = document.querySelectorAll('li');
+        for (const li of lili) {
+            // console.log(li.innerText)
         }
     </script>
 </body>
+
 </html>
